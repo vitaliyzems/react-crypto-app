@@ -1,3 +1,10 @@
+import { CryptoContextProvider } from './context/crypto-context';
+import AppLayout from './components/layout/AppLayout';
+
 export default function App() {
-  return <h1>React Crypto App</h1>
+  return (
+    <CryptoContextProvider>
+      <AppLayout />
+    </CryptoContextProvider>
+  );
 }
